@@ -1,22 +1,20 @@
+#Version 0.0.2: Improved functions!
+
 import pyperclip
 import random
 import time
 
+#[NEW] Local libraries
+import games
+
 file = 'tags.txt'
-general = ['gameplay', 'fun', 'top', 'funny', 'best moments', 'meme', 'impossible']
-gameadj = ['gameplay ', 'new ', 'latest version ', 'updated ', 'funny ']
 
 def convert(var):
     var2 = var.split(' ')
     return var2
 
 def extraGameTags(game):
-    ta1 = game + gameadj[0]
-    ta2 = gameadj[1] + game
-    ta3 = gameadj[2] + game
-    ta4 = game + gameadj[3]
-    ta5 = gameadj[4] + game
-    ta = [ta1, ta2, ta3, ta4, ta5]
+    ta = games.retrieveTags(game)
     return ta
 
 def write(file, message):
@@ -57,7 +55,7 @@ def makeTags(title, game, game_flags, other):
         oc = convert(other)
         time.sleep(1)
         etc = extraGameTags(game)
-        converted = tc + gc + g_fc + oc + etc + general
+        converted = tc + gc + g_fc + oc + etc
         print (converted)
         print ('Wiriting tags to ' + file)
         for i in converted:
