@@ -1,6 +1,6 @@
 # yt_tags
-*A YouTube tags generator (Still WIP, accepting suggestions)
-I am looking to upgrade this so feel free to commit. (Open source 😮)
+**A YouTube tags generator (Still WIP, accepting suggestions)
+*I am looking to upgrade this so feel free to commit. (Open source 😮)
 
 *If your game is listed in game.py it gives you a higher chance of blowing up!
 
