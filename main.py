@@ -1,4 +1,5 @@
 #Version 0.0.2: Improved functions!
+#Please run the .bat file in the main directory to install all libraries
 
 import pyperclip
 import random
